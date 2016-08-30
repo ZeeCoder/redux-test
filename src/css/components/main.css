@@ -1,0 +1,14 @@
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #555;
+
+    &--dark {
+        background: #000;
+    }
+
+    &--light {
+        background: #999;
+    }
+}
