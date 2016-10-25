@@ -1,0 +1,19 @@
+.button {
+    border: 1px solid;
+    padding: 4px 10px;
+    background: #ccc;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--ban {
+        color: #fff;
+        background: red;
+    }
+
+    &--approve {
+        color: #fff;
+        background: green;
+    }
+}

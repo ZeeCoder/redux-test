@@ -26,4 +26,5 @@ module.exports = {
             precss
         ];
     },
+    devtool: "#inline-source-map"
  };

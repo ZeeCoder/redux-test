@@ -1,2 +1,4 @@
 @import "etc/base";
 @import "components/main";
+@import "components/button";
+@import "components/media";

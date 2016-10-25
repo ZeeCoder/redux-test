@@ -1,13 +1,13 @@
 import * as constants from '../constants/page'
 
 const initialState = {
-    class: ''
+    className: ''
 }
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case constants.MAIN_CLASS_CHANGED:
-            return { ...state, className: action.payload.className }
+        case constants.MAIN_CLASS_TOGGLED:
+            return { ...state, className: (state.className === 'light' ? 'dark' : 'light') }
         default:
             return state
     }
