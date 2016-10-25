@@ -1,18 +1,13 @@
 import React from 'react'
-// import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import PageComponent from '../components/Page'
 import {toggleMainClass} from '../actions/page'
 
-const mapStateToProps = state => ({
-    className: state.page.className
-})
+const mapStateToProps = state => ({ ...state.page })
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onToggleClick: () => { dispatch(toggleMainClass()); }
-  }
-}
+const mapDispatchToProps = (dispatch) => ({
+  onToggleClick: () => { dispatch(toggleMainClass()); }
+})
 
 export default connect(
   mapStateToProps,
