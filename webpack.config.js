@@ -15,12 +15,12 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
-                test:   /\.css$/,
+                test: /\.css$/,
                 loader: "style-loader!css-loader!postcss-loader"
             }
         ]
     },
-    postcss: function(webpack) {
+    postcss: function (webpack) {
         return [
             postcssImport({ addDependencyTo: webpack }), // Must be first item in list
             precss

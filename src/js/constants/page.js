@@ -1,0 +1,1 @@
+export const MAIN_CLASS_CHANGED = 'MAIN_CLASS_CHANGED'
